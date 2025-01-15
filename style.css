@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --main-color: #3498db;
+  --main-color-dark: #2980b9;
+  --main-color-light: #5dade2;
+
+  --font-size-s: 12px;
+  --font-size-l: 18px;
+  --font-size-xl: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Kanit", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #000000 !important;
+  padding: 0 1rem;
+}
+
+#header {
+  margin-top: 5rem;
+}
+
+.nav-item a {
+  color: #000000;
+  font-size: var(--font-size-l);
+  font-weight: 400;
+  text-decoration: none;
+  transition: 0.3s;
+  margin-left: 1rem;
+}
+
+.nav-item a:hover {
+  scale: 1.1;
+  background: #00000016;
+  color: #000000;
+  border-radius: 10px;
+}
+
+.intro-name {
+  color: #ffffff;
+  font-weight: 700;
+  margin-top: 1rem;
+  font-size: 3rem;
+}
+
+.intro-desc {
+  color: #ffffff;
+  font-weight: 400;
+  margin-top: 1rem;
+  font-size: var(--font-size-l);
+}
+
+.contact a {
+  margin-left: 0;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.img-profile {
+  border-radius: 10px;
+  width: 200px;
+  height: auto; /* Adjust height to auto for proportional scaling */
+  margin-top: 1rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.welcome-intro {
+  margin-top: 3rem;
+  letter-spacing: 5px;
+  color: #ffffff;
+  font-size: 3rem;
+}
+
+main {
+  margin-top: 3rem;
+  color: #ffffff;
+}
+
+/* .row {
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.row:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in;
+} */
+
+.about_me {
+  margin-top: 3rem;
+  border-radius: 20px;
+  background: #ffffff;
+  padding: 20px;
+}
+
+.img_style {
+  border-radius: 20px;
+  border: 2px solid #000000;
+  width: 100%; /* Ensure the image takes full width of its container */
+  max-width: 210px; /* Set a max-width for better control */
+  height: auto; /* Adjust height to auto for proportional scaling */
+  display: block;
+  margin: 0 auto;
+}
+
+.desc_about {
+  margin-top: 3rem;
+}
+
+section {
+  margin: 9rem 0;
+}
+
+@media (max-width: 768px) {
+  .intro-name {
+    font-size: 2rem;
+  }
+
+  .intro-desc {
+    font-size: var(--font-size-l);
+  }
+
+  .welcome-intro {
+    font-size: 2rem;
+  }
+
+  .contact a {
+    margin-left: 0;
+  }
+
+  .img-profile {
+    width: 150px;
+  }
+
+  .about_me {
+    padding: 10px;
+  }
+
+  .img_style {
+    max-width: 100px;
+  }
+
+  .desc_about {
+    margin-top: 1rem;
+  }
+
+  section {
+    margin: 2rem 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .intro-name {
+    font-size: 1.5rem;
+  }
+
+  .welcome-intro {
+    font-size: 1.5rem;
+  }
+
+  .img-profile {
+    width: 100px;
+  }
+
+  .img_style {
+    max-width: 75px;
+  }
+
+  section {
+    margin: 1rem 0;
+  }
+}
